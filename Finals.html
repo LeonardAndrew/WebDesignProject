@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Web</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animsition.min.css">
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="assets/js/animsition.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#fff', '#fff', '#fff'],
+				anchors: ['Existence', 'Passion', 'Discovery'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+	<script type="text/javascript">
+   $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+    </script>
+
+	<style type="text/css">
+	#people{
+		background-image: url(assets/img/people.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#nature{
+		background-image: url(assets/img/nature.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#wildLife{
+		background-image: url(assets/img/wildlife.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#art{
+		background-image: url(assets/img/art.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+
+	#music{
+		background-image: url(assets/img/music.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#travel{
+		background-image: url(assets/img/travel.jpg);
+		background-size: cover;
+		background-position: center;
+	}#conventional{
+		background-image: url(assets/img/conventional.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#technology{
+		background-image: url(assets/img/technology.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#modern{
+		background-image: url(assets/img/modern.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	</style>
+</head>
+<body class="animsition"
+  data-animsition-in-class="fade-in"
+  data-animsition-in-duration="1000"
+  data-animsition-out-class="fade-out"
+  data-animsition-out-duration="800">
+  <div id="menu-wrap">
+  <table id="table-wrap">
+  	<tr>
+  		<td valign="bottom"><a href="Finals.html""><img src="assets/img/pixiewhite.png" style="vertical-align: bottom;"><span style="color: white; font-size: 24px; font-weight: bold; margin-left: -3px;">ixie</span></a></td>
+  		<td align="right"><ul id="menu">
+	<li data-menuanchor="Existence"><a href="#Existence">Existence</a></li>
+	<li data-menuanchor="Passion"><a href="#Passion">Passion</a></li>
+	<li data-menuanchor="Discovery"><a href="#Discovery">Discovery</a></li>
+</ul></td>
+  	</tr>
+  </table>
+  </div>
+
+
+<div id="footer">
+	<table class="searchWrap">
+		<tr>
+			<td><input class="customInput" type="text" placeholder="Search for free Photos..."/></td>
+			<td><button class="button" onclick="location.href='Results.html';"><img src="assets/img/search.png" ></button></td>
+		</tr>
+	</table>
+</div>
+<div id="fullpage">
+	<div class="section" >
+
+		<div class="slide" id="people">
+
+			<div class="intro">
+				
+				<h1 >people</h1>
+				<p>Connect your worlds.</p>
+			</div>
+			
+
+		</div>
+
+		<div class="slide" id="nature">
+			<div class="intro">
+				
+				<h1 >nature</h1>
+				<p>One touch of nature makes the whole world kin.</p>
+			</div>
+		</div>
+		<div class="slide" id="wildLife">
+			<div class="intro">
+				
+				<h1 >wild life</h1>
+				<p>Save it to cherish or leave it to perish.</p>
+			</div>
+		</div>
+		
+	</div>
+	<div class="section" id="section1">
+		<div class="slide" id="art">
+
+			<div class="intro">
+				
+				<h1>art</h1>
+				<p>The more minimal the art, the more maximum the explanation.</p>
+			</div>
+			
+
+		</div>
+
+		<div class="slide" id="music">
+			<div class="intro">
+				
+				<h1 >music</h1>
+				<p>Hear the music. Feel the beat.</p>
+			</div>
+		</div>
+		<div class="slide" id="travel">
+			<div class="intro">
+				<h1 >travel</h1>
+				<p>Experience the uncommon element.</p>
+			</div>
+		</div>
+		
+	</div>
+	<div class="section" id="section2">
+		<div class="slide" id="technology">
+
+			<div class="intro">
+				
+				<h1>technology</h1>
+				<p>Expanding Possibilities.</p>
+			</div>
+			
+
+		</div>
+
+		<div class="slide" id="conventional">
+			<div class="intro">
+				
+				<h1>conventional</h1>
+				<p>The Improvised Life.</p>
+			</div>
+		</div>
+		<div class="slide" id="modern">
+			<div class="intro">
+				
+				<h1>modern</h1>
+				<p>See, hear and feel the difference.</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>
